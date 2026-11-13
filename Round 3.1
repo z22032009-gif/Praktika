@@ -1,0 +1,10 @@
+import math
+
+x1, y1 = map(float, input('введите координаты первой точки (x1,y1): ').split())
+x2, y2 = map(float, input('введите координаты первой точки (x2,y2): ').split())
+
+def points(x1, y1, x2, y2):
+    euclidean_distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+    return euclidean_distance
+
+print(f'расстояние между точками {points(x1, y1, x2, y2):.2f}')
