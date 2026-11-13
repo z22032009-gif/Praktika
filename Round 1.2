@@ -1,0 +1,8 @@
+import math
+
+SEATS_PER_COMPORTAMENT = 4
+
+place = int(input('введите место в купе')) 
+compartment = (place-1)//SEATS_PER_COMPARTMENT+ 1
+
+print(f'номер купе{compartment}')
